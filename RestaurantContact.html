@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Home Page</Title>
+    </head>
+
+    <body>
+        <form action="fakePage.html" method="POST">
+        <style type="text/css">
+            table th { text-align: right; padding: 10px;}
+            table td { text-align: left; padding: 10px;}
+        </style>
+
+        <center><h1>Land Of 1000 Steaks</h1></center>
+        <hr>
+        
+
+        <table>
+            <col width="20">
+            <col width="80">
+            <col width="80">
+            <tr>
+                <td></td>
+                <td><a href="RestaurantMain.html">Home</a></td>
+                <td><a href="RestaurantMenu.html">Menu</a></td>
+                <td><a href="RestaurantContact.html">Contact Us</a></td>
+            </tr>
+        </table>
+        <hr><br/>
+        <table>
+            <tr>
+                    <th>Name:</th>
+                    <td><input type="text" name="customerName" /></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" name="customerEmail" /></td>
+                </tr>
+                <tr>
+                    <th>Phone:</th>
+                    <td><input type="text" name="customerPhone" /></td> 
+                </tr>
+                <tr>
+                    <th>Reason for inquiry:</th>
+                    <td>
+                        <select name="inquiry">
+                            <option value="Catering">Catering</option>
+                            <option value="Party">Private Party</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Additional Information:</th>
+                    <td><textarea name="briefDescription"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Have you been to the restaurant?</th>
+                    <td>
+                        <input type="radio" name="answer" value="No" checked/>No
+                        <input type="radio" name="answer" value="Yes" />Yes
+                    </td>
+                </tr>
+                <tr>
+                    <th>Best days to contact you:</th>
+                    <td> 
+                        <input type="checkbox" name="contact" value="monday" />M
+                        <input type="checkbox" name="contact" value="tuesday" />T
+                        <input type="checkbox" name="contact" value="wednesday" />W
+                        <input type="checkbox" name="contact" value="thursday" />Th
+                        <input type="checkbox" name="contact" value="friday" />F
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td><button type="submit" Value="submit"/>Send Request</button></td>
+                </tr>
+            
+        </table>
+        </form>
+        <br/><hr><br/>
+        <center>
+            Johnson Street, Newhaven, CT, 44454
+            <br/><br/>
+            (777) 455-1444
+            <br/><br/>
+        <hr>
+    </body>
+</html>
