@@ -1,0 +1,59 @@
+<!Doctype html>
+<html>
+    <title>Contact Us</title>
+    <body>
+        <form action="fakePage.html" method="POST">
+        <style type="text/css">
+            table th { text-align: right; }
+            table td { text-align: left; }
+            
+        </style>
+
+        <table>
+            <tr>
+                    <th>First Name:</th>
+                    <td><input type="text" name="myFirstName" /></td>
+                </tr>
+                <tr>
+                    <th>Last Name:</th>
+                    <td><input type="text" name="myLastName" /></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="text" name="myEmail" /></td> 
+                </tr>
+                <tr>
+                    <th>Type of License:</th>
+                    <td>
+                        <input type="radio" name="answer" value="Business" checked/>Business
+                        <input type="radio" name="answer" value="Personal"/>Personal
+                    </td>
+                </tr>
+                <tr>
+                    <th>Reason:</th>
+                    <td>
+                        <select name="phones">
+                            <option value="default">Select a Reason:</option>
+                            <option value="Software">Software Support</option>
+                            <option value="Hardware">Hardware Support</option>
+                            <option value="Information">Information Request</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Additional Information:</th>
+                    <td><textarea name="briefDescription"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="checkbox" name="tos" value="tos" />I have read the terms of service.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" Value="submit"/>Send Request</button></td>
+                </tr>
+            
+        </table>
+        </form>
+    </body>
+</html>
