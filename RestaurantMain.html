@@ -3,6 +3,7 @@
 <html>
 
     <style type "text/css">
+
         body {
             background-color:yellowgreen;
         }
@@ -20,22 +21,36 @@
     </style>
 
     <head style="font-family: verdana, arial, sans-serif">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
         <link rel="stylesheet" type="text/css" href="RestaurantStyles.css">
         <Title>Home Page</Title>
         <h1>Land Of 1000 Steaks</h1>
-        <hr>
+        
         <table>
             <col width="20">
             <col width="80">
             <col width="80">
             <tr>
-                <td></td>
-                <td><a href="RestaurantMain.html">Home</a></td>
-                <td><a href="RestaurantMenu.html">Menu</a></td>
-                <td><a href="RestaurantContact.html">Contact Us</a></td>
+                <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="RestaurantMain.html"><span class="glyphicon glyphicon-home"> Home</span></a>
+                </li>
+                <li><a href="RestaurantMenu.html">Menu</a></li>
+                <li><a href="Restaurantcontact.html">Contact</a></li>
+                </ul>
             </tr>
         </table>
-        <hr><br/>
+        <br/>
     </head>
 
     <body>
@@ -43,6 +58,7 @@
         <img src="images/steak.jpg" width="400px" height="150px">
         </div>
         <center>
+            <br/>
         <table width="400px" border="1" >
             <tr>
                 <td>Visit the Land Of 1000 Steaks and enjoy a taste treat. Explore different tastes, textures and flavors of your favorite steak! Montreal, Teriyaki and every flavor you can imagine.</td>
@@ -53,6 +69,12 @@
 
         <br/>
     </body>
+    <hr>
+        <div class="container">
+            <div class="jumbotron">
+            <h1>Meaty News!</h1> 
+                <p>You are almost ready to take a journey to the Land of 1000 Steaks!  Opening Soon!</p>
+            </div>
     <div>
         <hr>
         <footer>
