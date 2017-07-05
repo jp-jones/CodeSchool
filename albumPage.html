@@ -2,10 +2,16 @@
 <html>
     <style type "text/css">
 
+    
     a {
         text-decoration: none;
     }
-
+    td div:nth-of-type(odd) {
+    background: #e0e0e0;
+    }
+    td div:nth-of-type(even) {
+    background: #FFFFFF;
+    }
     a:hover {
     text-decoration: underline;
     background-color: turquoise;
@@ -24,7 +30,7 @@
         border: 1px solid black;
         border-collapse: collapse;
         font-style: italic;
-        background-color: turquoise;
+        /* background-color: turquoise; */
         text-align: center;
     }
     </style>
@@ -32,13 +38,24 @@
     <head>
         <title>Album - Def Leppard Pyromania</title>
         <link rel="stylesheet" href="albumStyles.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
     </head>
 
     <body>
         <p>
-            <!-- div style="background-image: url(images/Pyromania.jpg)"; height: 350px; width: 350px; -->
-                <center><img src="images/Pyromania.jpg" style="width: 350px;" /></center>
-            <!-- /div-->
+            <div class="container">
+                <center><img src="images/Pyromania.jpg" class="img-circle" style="width: 350px;" /></center>
+            </div>
 
         <div style="font-family: verdana, arial, sans-serif">
         <h1>Pyromania</h1>
@@ -68,7 +85,9 @@
             <center><h2>Tracks</h2></center>
 
             <center>
-            <table>
+            
+            <div class="table-responsive">
+            <table class="table table-striped">
                 <col width="100px" />
                 <col width="300px" />
                 <col width="400px" />
@@ -134,6 +153,7 @@
                     </center>
                 </tbody>
             </table>
+            </div>
             </center>
             
 
